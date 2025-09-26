@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Thèmes CinePulse</title>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a0a2e);
+  color: #f0f0f0;
+  width: 280px;
+  padding: 16px;
+  margin: 0;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #9d4edd;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+button span {
+  pointer-events: none;
+}
+
+#themeDefault { 
+  background: rgba(255,255,255,0.05); 
+  color: #ccc; 
+}
+#themeViolet { 
+  background: linear-gradient(135deg, #6b46c1, #3730a3); 
+  color: white; 
+}
+#themeCyber { 
+  background: linear-gradient(135deg, #0891b2, #0e7490); 
+  color: white; 
+}
+#themeSunset { 
+  background: linear-gradient(135deg, #dc2626, #b91c1c); 
+  color: white; 
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+<body>
+<h2>Choisis ton style</h2>
+<button id="themeDefault"><span>Par défaut</span></button>
+<button id="themeViolet"><span>Violet</span></button>
+<button id="themeCyber"><span>Cyber</span></button>
+<button id="themeSunset"><span>Fire</span></button>
+
+<script src="popup.js"></script>
+</body>
+</html>
